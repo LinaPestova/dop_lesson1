@@ -14,17 +14,20 @@ public class Operations {
         System.out.println(number1 +=number2);
 
         //Математические операторы и комбинации типов данных
-        System.out.println("Результат сложения "+ (double)(number4 + number3));
-        System.out.println("Результат вычитания "+ (double)(number4 - number3));
-        System.out.println("Результат умножения "+ (double)(number4 * number3));
-        System.out.println("Остаток от деления "+ (double)(number4 % number3));
+        System.out.println("Результат сложения "+ (number4 + number3));
+        System.out.println("Результат вычитания "+ (number4 - number3));
+        System.out.println("Результат умножения "+ (number4 * number3));
+        System.out.println("Остаток от деления "+ (number4 % number3));
         System.out.println("Постфикс ++ " + number4++);
         System.out.println("Постфикс -- " + number4--);
         System.out.println("Префикс ++ " + ++number1);
         System.out.println("Префикс -- " + --number4);
 
         //Операторы сравнения и конструкция if-else
-        if(number1 < number2) System.out.println("Первое число меньше второго");
-        else System.out.println("Первое число больше второго");
+        if(number3 < 1.0 && number3 > 0.0) {
+            System.out.println("Число в диапазоне от нуля до единицы");
+        }
+        else if(number3 > 1.0 || number3 < 0.0)
+            System.out.println("Число точно больше единицы или точно меньше нуля");
     }
 }
